@@ -65,21 +65,8 @@ export default (app) => {
 	})
 
 	// /signin/new_token [POST]
-	app.post('/signin/new_token', (request, response) => {
-		const userId = auth.getUserId(req.body.username, request.body.password)
-
-		if (!userId) {
-			response.status(401).json({ message: 'Invalid credentials' })
-		} else {
-			const newAccessToken = jwt.sign({
-				id: userId
-			}, config.JWT_SECRET, {
-				expiresIn: '10m'
-			})
-
-			response.json({accessToken: newAccessToken})
-		}
-	})
+	// app.post('/signin/new_token', (request, response) => {
+	// })
 
 	// /signup [POST]
 	app.post('/signup', async (request, response) => {
