@@ -1,0 +1,11 @@
+# curl -X POST -H "Content-Type: multipart/form-data" -F "file=@/YOURLOCALDIR/path" http://localhost:3000/file/upload
+POST http://localhost:3000/file/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="file.txt"
+
+< /YOURLOCALDIR/file.txt
+--WebAppBoundary--
+
+###

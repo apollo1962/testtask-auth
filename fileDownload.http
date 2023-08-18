@@ -1,0 +1,4 @@
+# curl -O http://localhost:3000/file/download/:id
+GET  http://localhost:3000/file/download/:id
+
+###

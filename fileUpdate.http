@@ -1,0 +1,11 @@
+# curl -X PUT -H "Content-Type: multipart/form-data" -F "file=@/YOURLOCALDIR/new_file.txt" http://localhost:3000/file/update/:id
+PUT http://localhost:3000/file/update/:id
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="new_file.txt"
+
+< /YOURLOCALDIR/new_file.txt
+--WebAppBoundary--
+
+###

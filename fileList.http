@@ -1,0 +1,6 @@
+# curl -X GET "http://localhost:3000/file/list?list_size=30&page=1"
+
+#GET http://localhost:3000/file/list
+GET http://localhost:3000/file/list?list_size=30&page=1
+
+###

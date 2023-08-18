@@ -1,0 +1,5 @@
+# curl -X GET http://localhost:3000/info -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
+GET http://localhost:3000/info
+Authorization: Bearer YOUR_ACCESS_TOKEN
+
+###
